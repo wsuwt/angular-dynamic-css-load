@@ -1,0 +1,30 @@
+<main>
+  <section style="display: inline-flex;justify-content: center;align-items: center;">
+    <!-- THEME SWITCHER -->
+    Theme:
+    <ef-toggle
+      #theme
+      slot="right"
+      style="width: 80px; padding-left: 1rem;"
+      label="light"
+      checked-label="dark"
+      [checked]="isDarkTheme"
+      (checked-changed)="handleThemeToggle($event)"
+    >
+    </ef-toggle>
+  </section>
+
+  <ef-panel spacing>
+    <ef-header>Heading </ef-header>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti maiores sed animi hic quam quae itaque.
+    Pariatur optio magnam ab omnis laboriosam iure animi unde veniam, qui earum quas voluptates ipsam
+    aspernatur. Omnis sed nostrum at mollitia nemo, voluptatibus repellat tenetur asperiores corrupti incidunt
+    voluptatum ratione? Voluptas necessitatibus ut perferendis assumenda, cumque nulla inventore soluta
+    voluptatem at? Odio natus inventore ut iure qui! Modi distinctio iste dolorem velit deserunt quis at
+    soluta assumenda reiciendis! At, culpa! Maiores nulla, non minus possimus repellendus minima
+    exercitationem a. Ipsum iste quod sunt impedit, praesentium assumenda asperiores facere delectus
+    perferendis nulla libero laboriosam ab?
+    <hr />
+    <ef-button>Okay</ef-button>
+  </ef-panel>
+</main>
